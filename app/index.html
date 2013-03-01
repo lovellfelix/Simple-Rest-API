@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="styles/bootstrap.css"/>
+        <link rel="stylesheet" href="styles/todc-bootstrap.css"/>
+        <link rel="stylesheet" href="styles/addon.css"/>
+
+    </head>
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+  
+    <div class="navbar navbar-googlebar navbar-fixed-top">
+    <div class="navbar-inner">
+   <div class="container">
+   <ul class="nav">
+    <a class="brand" href="/">labs</a>
+    </ul>
+    
+     <div class="nav-collapse">
+                    <ul class="nav">
+                        </ul>
+                        <ul class="nav pull-right">
+            <li class="dropdown">
+                <p class="dropdown-toggle navbar-text" data-toggle="dropdown" id="userDrop">
+                      <span class="icon-bar"></span>
+                        <a href="#"></a>
+                            <b class="caret"></b>
+                </p>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="icon-home"></i> </a></li>             
+                    </ul>
+            </li>
+        </ul></div>
+  </div>
+  
+  
+</div>
+  
+       </div>
+  <!--/.nav-collapse -->
+    <body ng-app="frontEndApp">
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <!--[if lt IE 9]>
+            <script src="scripts/vendor/es5-shim.min.js"></script>
+            <script src="scripts/vendor/json3.min.js"></script>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+
+        <div class="container" ng-view></div>
+
+		
+		<div id="sidebar">
+    <ng:include src="'views/wine-list.html'"></ng:include>
+</div>
+
+  <!-- Footer
+    ================================================== -->
+  <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <br />
+        <p class="muted credit">&copy; 2012 <a href="http://lovellfelix.com/">Lovell Felix</a> </p>
+      </div>
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+        <script src="http://code.angularjs.org/1.0.3/angular-resource.min.js"></script>
+        <script src="scripts/vendor/angular.js" ng:autobind></script>
+
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/services.js"></script>
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
